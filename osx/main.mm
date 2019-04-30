@@ -3,32 +3,9 @@
  * @Date:   2019-04-28T13:46:14-07:00
  * @Email:  brogan.miner@oregonstate.edu
  * @Last modified by:   Brogan
- * @Last modified time: 2019-04-28T20:30:39-07:00
+ * @Last modified time: 2019-04-29T19:37:09-07:00
  */
- //
- //  main.m
- //  hexbotcommander
- //
- //  Created by Brogan Miner on 12/27/18.
- //  Copyright © 2018 Brogan Miner. All rights reserved.
- //
 
- #import <Foundation/Foundation.h>
- #import <CoreBluetooth/CoreBluetooth.h>
-
- @interface HB_CBDelegate : NSObject <CBCentralManagerDelegate, CBPeripheralDelegate> {
-     CBPeripheral *_peripheralDevice;
-     CBCharacteristic *_rxCharecteristic;
-     CBCharacteristic *_txCharacteristic;
- }
- @property (strong) CBPeripheral *peripheralDevice;
- @property (strong) CBCharacteristic *tx;
- @property (strong) CBCharacteristic *rx;
-
- - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI;
- - (void)centralManagerDidUpdateState:(CBCentralManager *)central;
- - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral;
- @end
  @implementation HB_CBDelegate
 
  @synthesize peripheralDevice = _peripheralDevice;
