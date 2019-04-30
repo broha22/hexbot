@@ -2,9 +2,9 @@
 # @Date:   2019-04-28T16:56:50-07:00
 # @Email:  brogan.miner@oregonstate.edu
 # @Last modified by:   Brogan
-# @Last modified time: 2019-04-28T20:31:18-07:00
+# @Last modified time: 2019-04-29T21:27:10-07:00
 
-ARDUINO_IN=arduino_interface.ino
+ARDUINO_IN=arduino_interface.cpp
 ARDUINO_OUT=arduino_interface.bin
 
 OSX_IN=main.mm
